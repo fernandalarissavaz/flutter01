@@ -20,3 +20,56 @@ void main(){
     
 }    
     
+
+
+///////////////////////ESTRUTURA BASICA DE FLUTTER///////////////
+
+
+
+//ESTRUTURA BÁSICA DE UM PROJETO FLUTTER
+
+import 'package:flutter/material.dart';
+
+void main() {
+  
+  runApp(MaterialApp(
+    
+    debugShowCheckedModeBanner: true,
+    home: Scaffold(
+      appBar: AppBar(
+        title: Text("Instagram"),
+        backgroundColor: Colors.pink,
+      ),
+      body: Padding(
+        padding: EdgeInsets.all(16),
+       child: Text("Conteúdo Principal"),
+      ),
+      
+      bottomNavigationBar: BottomAppBar(
+        color: Colors.amber,
+         child: Padding(
+           padding: EdgeInsets.all(16),
+            child: Row(
+              children:<Widget> [
+                Text("Texto1"),
+                Text("Texto2")
+      
+        
+       ]
+      )
+    )
+        
+        )
+      
+      )
+    ),
+         
+         );
+  
+  
+
+  
+}
+  
+  
+  
